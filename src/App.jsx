@@ -1,13 +1,19 @@
-import React from 'react';
-import Routes from "./routes"
+import React from "react";
+import styled from "styled-components";
+import Routes from "./routes";
+import { GlobalStyle } from "./GlobalStyle";
+
+const Wrapper = styled.div`
+  background-color: #ecf400;
+  height: 100vh;
+`;
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <Routes />
-      </header>
-    </div>
+    <Wrapper>
+      <GlobalStyle />
+      <Routes />
+    </Wrapper>
   );
 }
 
